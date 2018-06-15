@@ -12,7 +12,7 @@ Development : Oracle12c
 	| H2
 	| PostgreSQLDev
 	| MariaDBDev
-	| MySql ;
+	| MySqlDev ;
 
 H2 : DiskBased
 	| InMemory ;
@@ -51,7 +51,7 @@ UaaServer implies Uaa ;
 Oracle implies H2 or Oracle12c ;
 not OAuth2 and not SocialLogin and not MicroserviceApplication implies SQL or MongoDB or Cassandra ;
 Server implies not Protractor ;
-MySQL implies H2 or MySql ;
+MySQL implies H2 or MySqlDev ;
 MicroserviceApplication or MicroserviceGateway implies JWT or Uaa ;
 Monolithic implies JWT or HTTPSession or OAuth2 ;
 MariaDB implies H2 or MariaDBDev ;

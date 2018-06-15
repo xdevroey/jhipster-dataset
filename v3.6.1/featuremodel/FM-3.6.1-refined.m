@@ -25,7 +25,7 @@ Hibernate2ndLvlCache : HazelCast
 Development : H2
 	| PostgreSQLDev
 	| MariaDBDev
-	| MySql ;
+	| MySQLDev ;
 
 H2 : DiskBased
 	| InMemory ;
@@ -47,7 +47,7 @@ UaaServer implies Uaa ;
 not  OAuth2 and not  SocialLogin and not  MicroserviceApplication implies SQL or MongoDB or Cassandra ;
 Server implies not  Protractor ;
 not  Server implies Protractor ;
-MySQL implies H2 or MySql ;
+MySQL implies H2 or MySQLDev ;
 MicroserviceApplication or MicroserviceGateway implies JWT or Uaa ;
 Monolithic implies JWT or HTTPSession or OAuth2 ;
 MariaDB implies H2 or MariaDBDev ;
