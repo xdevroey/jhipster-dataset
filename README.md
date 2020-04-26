@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/106559968.svg)](https://zenodo.org/badge/latestdoi/106559968)
+
 # JHipster dataset
 
 This repository contains the dataset produced by the JHipster case study described in Halin, A., Nuttinck, A., Acher, M., Devroey, X., Perrouin, G. and Baudry, B. (2019). [Test them all, is it worth it? Assessing configuration sampling on the JHipster Web development stack](https://doi.org/10.1007/s10664-018-9635-4). In *Empirical Software Engineering* 24, 2 (Apr. 2019), pp. 674–717. ([open access](https://doi.org/10.1007/s10664-018-9635-4)). 
